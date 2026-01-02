@@ -1,310 +1,157 @@
-\# HR Analytics — Statistics \& Probability Analysis
+# HR Analytics — Statistics & Probability Analysis
 
-
-
-\## 1. What This Project Is About
+## 1. What This Project Is About
 
 This project uses statistics and probability to analyze an HR analytics dataset.
 
+The goal is **not** to build models or predictions, but to demonstrate that I understand:
 
+- How to classify variables correctly  
+- How to choose appropriate statistical methods  
+- How to check assumptions before applying tests  
+- How to interpret results carefully and honestly  
 
-The goal is not to build models or predictions, but to show that I understand:
-
-\- How to classify variables correctly
-
-\- How to choose appropriate statistical methods
-
-\- How to check assumptions before applying tests
-
-\- How to interpret results carefully and honestly
-
-
-
-This is a statistics-first project, not a machine learning project.
-
-
-
-
+This is a **statistics-first project**, not a machine learning project.
 
 ---
 
+## 2. Why I Built This Project
 
+I am transitioning into Data Science from a finance background, where understanding
+assumptions, distributions, and interpretation is critical.
 
-\## 3. About the Dataset
+This project is designed to demonstrate **statistical thinking and rigor**, rather than
+model-building or prediction accuracy.
 
+---
 
+## 3. About the Dataset
+
+The dataset contains employee-level HR data commonly used for attrition and workforce
+analysis.
 
 This point is important because it limits what kinds of statistical claims are valid.
-
-
+The data is **observational**, not experimental.
 
 ---
 
+## 4. Variable Classification
 
-
-\## 4. Variable Classification
-
-All variables were classified before any analysis was performed, since correct
-
+All variables were classified **before** any analysis was performed, since correct
 statistical analysis depends on understanding what type of data each variable represents.
 
+### 4.1 Variables Excluded From Analysis
 
+The following variables are excluded because they are identifiers or constants and do not
+provide analytical value:
 
-\### 4.1 Variables Excluded From Analysis
-
-The following variables are excluded because they are identifiers or constants and
-
-do not provide analytical value:
-
-\- EmpID
-
-\- EmployeeNumber
-
-\- EmployeeCount
-
-\- Over18
-
-\- StandardHours
-
-
+- EmpID  
+- EmployeeNumber  
+- EmployeeCount  
+- Over18  
+- StandardHours  
 
 ---
 
-
-
-\### 4.2 Binary Categorical Variables
+### 4.2 Binary Categorical Variables
 
 These variables have two categories:
 
-\- Attrition
-
-\- Gender
-
-\- OverTime
-
-
+- Attrition  
+- Gender  
+- OverTime  
 
 ---
 
-
-
-\### 4.3 Nominal Categorical Variables
+### 4.3 Nominal Categorical Variables
 
 These variables represent categories with no natural order:
 
-\- Department
-
-\- JobRole
-
-\- BusinessTravel
-
-\- EducationField
-
-\- MaritalStatus
-
-
+- Department  
+- JobRole  
+- BusinessTravel  
+- EducationField  
+- MaritalStatus  
 
 ---
 
+### 4.4 Ordinal Categorical Variables
 
+These variables have a natural order, but the distance between values is not guaranteed
+to be equal:
 
-\### 4.4 Ordinal Categorical Variables
-
-These variables have an order, but the distance between values is not guaranteed to
-
-be equal:
-
-\- Education
-
-\- EnvironmentSatisfaction
-
-\- JobInvolvement
-
-\- JobLevel
-
-\- JobSatisfaction
-
-\- PerformanceRating
-
-\- RelationshipSatisfaction
-
-\- StockOptionLevel
-
-\- WorkLifeBalance
-
-\- TrainingTimesLastYear
-
-\- PercentSalaryHike
-
-\- AgeGroup
-
-\- SalarySlab
-
-
+- Education  
+- EnvironmentSatisfaction  
+- JobInvolvement  
+- JobLevel  
+- JobSatisfaction  
+- PerformanceRating  
+- RelationshipSatisfaction  
+- StockOptionLevel  
+- WorkLifeBalance  
+- TrainingTimesLastYear  
+- PercentSalaryHike  
+- AgeGroup  
+- SalarySlab  
 
 ---
 
-
-
-\### 4.5 Continuous Numerical Variables
+### 4.5 Continuous Numerical Variables
 
 These variables are numerical and measured on a continuous or ratio scale:
 
-\- Age
-
-\- DailyRate
-
-\- DistanceFromHome
-
-\- HourlyRate
-
-\- MonthlyIncome
-
-\- MonthlyRate
-
-\- NumCompaniesWorked
-
-\- TotalWorkingYears
-
-\- YearsAtCompany
-
-\- YearsInCurrentRole
-
-\- YearsSinceLastPromotion
-
-\- YearsWithCurrManager
-
-
+- Age  
+- DailyRate  
+- DistanceFromHome  
+- HourlyRate  
+- MonthlyIncome  
+- MonthlyRate  
+- NumCompaniesWorked  
+- TotalWorkingYears  
+- YearsAtCompany  
+- YearsInCurrentRole  
+- YearsSinceLastPromotion  
+- YearsWithCurrManager  
 
 ---
 
-
-
-\## 5. Statistical Focus
+## 5. Statistical Focus
 
 This project focuses on:
 
-\- Descriptive statistics (means, medians, variability)
-
-\- Probability distributions
-
-\- Inferential statistics such as hypothesis testing
-
-
+- Descriptive statistics (means, medians, variability)  
+- Probability distributions  
+- Inferential statistics such as hypothesis testing  
 
 Statistical tests are chosen based on:
 
-\- The type of variables involved
+- The type of variables involved  
+- Distributional assumptions  
+- Sample size  
+- Independence of observations  
 
-\- Distributional assumptions
+---
 
-\- Sample size
+## 6. What This Project Does Not Attempt
 
-\- Independence of observations
+To keep the analysis honest and focused, this project does **not** include:
 
+- Machine learning or predictive models  
+- Causal claims or cause-and-effect statements  
+- A/B testing (the data is not experimental)  
+- Dashboards or business recommendations  
 
+---
 
+## 7. Interpretation and Limitations
 
-
-\#6. What This Project Does Not Attempt
-
-
-
--To keep the analysis honest and focused, this project does not include:
-
-
-
--Machine learning or predictive models
-
-
-
--Causal claims or cause-and-effect statements
-
-
-
--A/B testing (the data is not experimental)
-
-
-
--Dashboards or business recommendations
-
-
-
-\#7. Interpretation and Limitations
-
-
-
-All results in this project represent statistical associations, not causal
-
+All results in this project represent **statistical associations**, not causal
 relationships.
 
-
-
-Conclusions are interpreted within the limits of observational data and the
-
-assumptions required by each statistical method.
-
-
-
-
+Conclusions are interpreted within the limits of observational data and the assumptions
+required by each statistical method.
 
 ---
 
-
-
-\## 8. Repository Structure
-
-
-
-data/raw/ Original dataset (kept unchanged)
-
-data/processed/ Cleaned or transformed data
-
-notebooks/ Main statistical analysis notebook
-
-
-
-
-
----
-
-
-
-\## 9. How to Read This Project
-
-
-
--Start with variable classification
-
-
-
--Review descriptive statistics
-
-
-
--Examine probability distributions
-
-
-
--Evaluate hypothesis tests and assumptions
-
-
-
--Read interpretations and limitations
-
-
-
-
-
-
-
----
-
-
-
-\## END README
-
-
-
-
+## 8. Repository Structure
 
