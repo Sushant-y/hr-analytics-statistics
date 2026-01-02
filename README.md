@@ -155,3 +155,20 @@ required by each statistical method.
 
 ## 8. Repository Structure
 
+- data/raw/ Original dataset (kept unchanged)
+- data/processed/ Cleaned or transformed data
+- notebooks/ Main statistical analysis notebook
+
+---
+
+## 9. How to Read This Project
+
+- Start with variable classification
+- Review descriptive statistics
+- Examine probability distributions
+- Evaluate hypothesis tests and assumptions
+- Read interpretations and limitations
+
+---
+
+## End of README
