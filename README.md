@@ -171,4 +171,20 @@ required by each statistical method.
 
 ---
 
+## 10. Statistical Questions Explored
+
+This project examines statistical relationships such as:
+
+- Association between employee attrition and overtime status
+
+- Association between attrition and job role
+
+- Differences in monthly income across job levels
+
+- Relationship between work-life balance and attrition
+
+- Correlation between total working experience and monthly income
+
+---
+
 ## End of README
